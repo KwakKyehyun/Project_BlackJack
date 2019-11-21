@@ -21,9 +21,9 @@ int cardIndex = 0;
 
 
 //player info
-int dollar[N_MAX_USER];	
-					//dollars that each player has
-int n_user;	
+int dollar[N_MAX_USER];	 //dollars that each player has
+    
+int n_user;	//number of users
 
    do
    {
@@ -39,9 +39,9 @@ int n_user;
 		printf("Put correct number of player. (Maximum is 5) \n");  
      	}
     }
-    while ( n_user <= 5 );
-        printf("Okay. \n");	//number of users
-
+    while ( n_user == 0 || n_user >= 6 );
+        printf("Okay. \n");	
+        
 
 //play yard information
 int cardhold[N_MAX_USER+1][N_MAX_CARDHOLD];	//cards that currently the players hold
